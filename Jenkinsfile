@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Installing dependencies...'
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running tests...'
-                    sh 'npm test'
+                    bat 'npm test'
                 }
             }
         }
